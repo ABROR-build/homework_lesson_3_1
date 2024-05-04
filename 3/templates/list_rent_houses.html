@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rents</title>
+</head>
+<body>
+<h1>Rents</h1>
+    {% for rent in rent_houses %}
+        {{ rent.type.type }}
+        {{ rent.house_type }}
+        {{ rent.price }}
+        {{ rent.comments }}
+    {% endfor %}
+
+</body>
+</html>

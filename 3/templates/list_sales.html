@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales types</title>
+</head>
+<body>
+    <h1> Choose a type </h1>
+    {% for sale_type in sales_types %}
+        <p>
+            <a href="{% url 'list_rent_houses' sale_type.pk %}">{{ sale_type.type }}</a>
+        </p>
+
+    {% endfor %}
+
+</body>
+</html>
